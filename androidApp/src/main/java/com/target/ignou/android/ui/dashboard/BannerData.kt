@@ -9,17 +9,20 @@ object BannerData {
             Banner(
                 id = 1,
                 title = "IGNOU Admit Card",
-                imageRes = R.drawable.ignou_admit_card
+                imageRes = R.drawable.ignou_admit_card,
+                link = "https://ignou.ac.in"
             ),
             Banner(
                 id = 2,
                 title = "IGNOU Exam Form",
-                imageRes = R.drawable.ignou_exam_form
+                imageRes = R.drawable.ignou_exam_form,
+                link = "https://ignou.ac.in"
             ),
             Banner(
                 id = 3,
                 title = "IGNOU Result Update",
-                imageRes = R.drawable.ignou_result_update
+                imageRes = R.drawable.ignou_result_update,
+                link = "https://ignou.ac.in"
             )
         )
     }

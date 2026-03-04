@@ -3,6 +3,7 @@ package com.target.ignou.android.ui.dashboard
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
@@ -17,6 +18,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -33,6 +35,7 @@ fun BannerSlider(
 
     val pagerState = rememberPagerState { banners.size }
     val currentPage by remember { derivedStateOf { pagerState.currentPage } }
+    val uriHandler = LocalUriHandler.current
 
     LaunchedEffect(banners.size) {
         if (banners.size <= 1) return@LaunchedEffect
@@ -61,6 +64,11 @@ fun BannerSlider(
                 modifier = Modifier
                     .fillMaxSize()
                     .clip(RoundedCornerShape(14.dp))
+                    .clickable {
+                        if (banner.link.isNotBlank()) {
+                            uriHandler.openUri(banner.link)
+                        }
+                    }
             ) {
 
                 Image(
@@ -75,7 +83,7 @@ fun BannerSlider(
                         .fillMaxSize()
                         .background(
                             Brush.verticalGradient(
-                                listOf(Color.Transparent, Color(0xB3CFCACA))
+                                listOf(Color.Transparent, Color(0xB3344483))
                             )
                         )
                 )

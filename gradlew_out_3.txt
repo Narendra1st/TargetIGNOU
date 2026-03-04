@@ -1,0 +1,47 @@
+
+> Configure project :shared
+w: The Default Kotlin Hierarchy Template was not applied to 'project ':shared'':
+Explicit .dependsOn() edges were configured for the following source sets:
+[iosArm64Main, iosMain, iosSimulatorArm64Main, iosX64Main]
+
+Consider removing dependsOn-calls or disabling the default template by adding
+    'kotlin.mpp.applyDefaultHierarchyTemplate=false'
+to your gradle.properties
+
+Learn more about hierarchy templates: https://kotl.in/hierarchy-template
+
+
+> Task :shared:checkKotlinGradlePluginConfigurationErrors
+> Task :shared:generateComposeResClass UP-TO-DATE
+> Task :shared:preBuild UP-TO-DATE
+> Task :shared:preDebugBuild UP-TO-DATE
+> Task :shared:generateDebugResValues UP-TO-DATE
+> Task :shared:generateDebugResources UP-TO-DATE
+> Task :shared:packageDebugResources UP-TO-DATE
+> Task :shared:parseDebugLocalResources UP-TO-DATE
+> Task :shared:processDebugManifest UP-TO-DATE
+> Task :shared:generateDebugRFile UP-TO-DATE
+
+> Task :shared:compileDebugKotlinAndroid FAILED
+e: file:///C:/Users/shaim/AndroidStudioProjects/TargetIGNOU/shared/src/commonMain/kotlin/com/target/ignou/repository/SubjectRepository.kt:3:31 Unresolved reference: AddSubjectRequest
+e: file:///C:/Users/shaim/AndroidStudioProjects/TargetIGNOU/shared/src/commonMain/kotlin/com/target/ignou/repository/SubjectRepository.kt:4:31 Unresolved reference: Subject
+e: file:///C:/Users/shaim/AndroidStudioProjects/TargetIGNOU/shared/src/commonMain/kotlin/com/target/ignou/repository/SubjectRepository.kt:28:37 Unresolved reference: AddSubjectRequest
+e: file:///C:/Users/shaim/AndroidStudioProjects/TargetIGNOU/shared/src/commonMain/kotlin/com/target/ignou/repository/SubjectRepository.kt:28:57 Unresolved reference: Subject
+e: file:///C:/Users/shaim/AndroidStudioProjects/TargetIGNOU/shared/src/commonMain/kotlin/com/target/ignou/repository/SubjectRepository.kt:33:11 Not enough information to infer type variable T
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':shared:compileDebugKotlinAndroid'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s
+8 actionable tasks: 2 executed, 6 up-to-date

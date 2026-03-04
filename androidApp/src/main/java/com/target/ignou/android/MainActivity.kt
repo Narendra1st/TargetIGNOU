@@ -14,6 +14,7 @@ import com.target.ignou.android.ui.features.FaqScreen
 import com.target.ignou.android.ui.features.PyqSolveScreen
 import com.target.ignou.android.ui.pyq.PyqCourseSelectionScreen
 import com.target.ignou.android.ui.pyq.PyqYearSelectionScreen
+import com.target.ignou.android.ui.pyq.SolvedContentScreen
 import com.target.ignou.android.ui.theme.TargetIGNOUTheme
 
 class MainActivity : ComponentActivity() {
@@ -36,6 +37,19 @@ class MainActivity : ComponentActivity() {
                         PyqYearSelectionScreen(
                             navController = navController,
                             subject = backStackEntry.arguments?.getString("subject")
+                        )
+                    }
+                    composable(
+                        "solved_content/{subject}/{year}",
+                        arguments = listOf(
+                            navArgument("subject") { type = NavType.StringType },
+                            navArgument("year") { type = NavType.IntType }
+                        )
+                    ) { backStackEntry ->
+                        SolvedContentScreen(
+                            navController = navController,
+                            subject = backStackEntry.arguments?.getString("subject"),
+                            year = backStackEntry.arguments?.getInt("year")
                         )
                     }
                     composable("pyq_solve") {

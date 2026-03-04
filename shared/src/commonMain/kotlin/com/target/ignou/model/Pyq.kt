@@ -7,3 +7,7 @@ data class Pyq(
     val subject: String,
     val pdfUrl: String
 )
+data class PyqResponse(
+    val subjectCode: String,
+    val pyqs: List<Pyq>
+)

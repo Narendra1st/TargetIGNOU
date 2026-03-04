@@ -7,5 +7,6 @@ import androidx.compose.runtime.Immutable
 data class Banner(
     val id: Int,
     val title: String,
-    @DrawableRes val imageRes: Int
+    @DrawableRes val imageRes: Int,
+    val link: String = ""
 )

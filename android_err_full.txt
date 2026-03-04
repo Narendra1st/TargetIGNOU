@@ -1,0 +1,54 @@
+
+> Configure project :shared
+w: The Default Kotlin Hierarchy Template was not applied to 'project ':shared'':
+Explicit .dependsOn() edges were configured for the following source sets:
+[iosArm64Main, iosMain, iosSimulatorArm64Main, iosX64Main]
+
+Consider removing dependsOn-calls or disabling the default template by adding
+    'kotlin.mpp.applyDefaultHierarchyTemplate=false'
+to your gradle.properties
+
+Learn more about hierarchy templates: https://kotl.in/hierarchy-template
+
+.\gradlew.bat : 
+At line:1 char:1
++ .\gradlew.bat 
+:androidApp:assembleDebug 
+2>&1 | Out-File -Encoding 
+ASC ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (:String  
+  ) [], RemoteException
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+FAILURE: Build failed with 
+an exception.
+
+* What went wrong:
+Cannot locate tasks that 
+match 
+':androidApp:assembleDebug' 
+as project 'androidApp' not 
+found in root project 
+'TargetIGNOU'.
+
+* Try:
+> Run gradlew projects to 
+get a list of available 
+projects.
+> Run with --stacktrace 
+option to get the stack 
+trace.
+> Run with --info or --debug 
+option to get more log 
+output.
+> Run with --scan to get 
+full insights.
+
+* Get more help at 
+https://help.gradle.org
+
+BUILD FAILED in 1s

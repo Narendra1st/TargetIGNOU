@@ -1,0 +1,99 @@
+
+> Configure project :shared
+w: The Default Kotlin Hierarchy Template was not applied to 'project ':shared'':
+Explicit .dependsOn() edges were configured for the following source sets:
+[iosArm64Main, iosMain, iosSimulatorArm64Main, iosX64Main]
+
+Consider removing dependsOn-calls or disabling the default template by adding
+    'kotlin.mpp.applyDefaultHierarchyTemplate=false'
+to your gradle.properties
+
+Learn more about hierarchy templates: https://kotl.in/hierarchy-template
+
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :shared:preBuild UP-TO-DATE
+> Task :shared:preDebugBuild UP-TO-DATE
+> Task :shared:writeDebugAarMetadata UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :shared:generateDebugResValues UP-TO-DATE
+> Task :shared:generateDebugResources UP-TO-DATE
+> Task :shared:packageDebugResources UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :shared:extractDeepLinksDebug UP-TO-DATE
+> Task :shared:processDebugManifest UP-TO-DATE
+> Task :app:processDebugMainManifest FROM-CACHE
+> Task :app:processDebugManifest FROM-CACHE
+> Task :app:processDebugManifestForPackage FROM-CACHE
+> Task :shared:compileDebugLibraryResources UP-TO-DATE
+> Task :shared:parseDebugLocalResources UP-TO-DATE
+> Task :shared:generateDebugRFile UP-TO-DATE
+> Task :app:processDebugResources FROM-CACHE
+> Task :shared:checkKotlinGradlePluginConfigurationErrors
+> Task :shared:generateComposeResClass UP-TO-DATE
+> Task :shared:compileDebugKotlinAndroid UP-TO-DATE
+> Task :shared:javaPreCompileDebug UP-TO-DATE
+> Task :shared:compileDebugJavaWithJavac NO-SOURCE
+> Task :shared:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :app:compileDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:compileDebugJavaWithJavac NO-SOURCE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :shared:mergeDebugShaders UP-TO-DATE
+> Task :shared:compileDebugShaders NO-SOURCE
+> Task :shared:copyDebugFontsToAndroidAssets UP-TO-DATE
+> Task :shared:generateDebugAssets UP-TO-DATE
+> Task :shared:packageDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :shared:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:dexBuilderDebug
+> Task :app:mergeDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processDebugJavaRes UP-TO-DATE
+> Task :shared:processDebugJavaRes UP-TO-DATE
+> Task :app:mergeDebugJavaResource UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :shared:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :app:mergeProjectDexDebug UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :shared:mergeDebugJniLibFolders UP-TO-DATE
+> Task :shared:mergeDebugNativeLibs NO-SOURCE
+> Task :shared:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :shared:stripDebugDebugSymbols NO-SOURCE
+> Task :shared:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :shared:extractDebugAnnotations UP-TO-DATE
+> Task :shared:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :shared:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :shared:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :shared:prepareDebugArtProfile UP-TO-DATE
+> Task :shared:prepareLintJarForPublish UP-TO-DATE
+> Task :shared:mergeDebugJavaResource UP-TO-DATE
+> Task :shared:syncDebugLibJars
+> Task :shared:bundleDebugAar
+> Task :shared:assembleDebug
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+
+BUILD SUCCESSFUL in 3s
+64 actionable tasks: 7 executed, 4 from cache, 53 up-to-date

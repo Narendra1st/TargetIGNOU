@@ -89,13 +89,13 @@ fun DashboardScreen(navController: NavController) {
                 horizontalArrangement = Arrangement.spacedBy(16.dp)
             ) {
                 item {
-                    FeatureCard("PYQ IGNOU") {
+                    FeatureCard("Previous Year Papers") {
                         navController.navigate("pyq_course_selection")
                     }
                 }
                 item {
-                    FeatureCard("IGNOU PYQ Solve (All Years)") {
-                        navController.navigate("pyq_solve")
+                    FeatureCard("Solved Papers") {
+                        navController.navigate("pyq_course_selection")
                     }
                 }
                 item {
@@ -108,6 +108,7 @@ fun DashboardScreen(navController: NavController) {
                         navController.navigate("faq")
                     }
                 }
+
             }
         }
 
